@@ -1,17 +1,17 @@
 package ca.ns.navid.shx.patterns.creational.singleton;
 
-public final class SingleEager {
+public final class EagerSingle {
 
-    private static SingleEager instance;
+    private static EagerSingle instance;
 
-    private SingleEager() {
+    private EagerSingle() {
         throw new UnsupportedOperationException("Singleton class - Do not instantiate");
     }
 
-    public static SingleEager getInstance() {
+    public static EagerSingle getInstance() {
 
         if (instance == null) {
-            instance = new SingleEager();
+            instance = new EagerSingle();
         }
 
         return instance;

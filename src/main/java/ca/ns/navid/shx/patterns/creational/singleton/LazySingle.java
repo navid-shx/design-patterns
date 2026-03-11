@@ -1,14 +1,14 @@
 package ca.ns.navid.shx.patterns.creational.singleton;
 
-public final class SingleLazy {
+public final class LazySingle {
 
-    private static final  SingleLazy INSTANCE = new SingleLazy();
+    private static final LazySingle INSTANCE = new LazySingle();
 
-    private SingleLazy() {
+    private LazySingle() {
         throw new UnsupportedOperationException("Singleton class - Do not instantiate");
     }
 
-    public static SingleLazy getInstance() {
+    public static LazySingle getInstance() {
         return INSTANCE;
     }
 }
