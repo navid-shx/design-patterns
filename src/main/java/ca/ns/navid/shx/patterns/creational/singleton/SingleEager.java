@@ -1,4 +1,4 @@
-package ca.ns.navid.shx.patterns.singleton;
+package ca.ns.navid.shx.patterns.creational.singleton;
 
 public final class SingleEager {
 
