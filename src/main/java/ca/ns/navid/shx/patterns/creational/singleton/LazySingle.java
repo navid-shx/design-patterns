@@ -2,13 +2,17 @@ package ca.ns.navid.shx.patterns.creational.singleton;
 
 public final class LazySingle {
 
-    private static final LazySingle INSTANCE = new LazySingle();
+    private static LazySingle instance;
 
     private LazySingle() {
-        throw new UnsupportedOperationException("Singleton class - Do not instantiate");
     }
 
     public static LazySingle getInstance() {
-        return INSTANCE;
+
+        if (instance == null) {
+            instance = new LazySingle();
+        }
+
+        return instance;
     }
 }
